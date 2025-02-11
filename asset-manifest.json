@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/valentine-s-day/static/css/main.31d6cfe0.css",
+    "main.js": "/valentine-s-day/static/js/main.7d8fd727.js",
+    "index.html": "/valentine-s-day/index.html",
+    "main.7d8fd727.js.map": "/valentine-s-day/static/js/main.7d8fd727.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.7d8fd727.js"
+  ]
+}
