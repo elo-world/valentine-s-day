@@ -1,12 +1,33 @@
-import React from "react";
-import Action from "./Action";
+import React, { useState } from "react";
+import Buttons from "./Buttons";
 
 const Home = ({ params }) => {
+    const [deniedCount, setDeniedCount] = useState(0);
+
+    const renderCat = () => {
+        if (deniedCount > 0) {
+            if (deniedCount === 7) {
+                return (
+                    <>
+                        <p>
+                            Un vieu dicton dit : Rejoins le ou tu périras dans d'atroce souffrance !
+                        </p>
+                        <img src={`./images/cat/${deniedCount}-denied-cat.png`} alt="cat" />
+                    </>
+                );
+            } else {
+                return <img src={`./images/cat/${deniedCount}-denied-cat.png`} alt="cat" />;
+            }
+        } else {
+            return <img src="./images/cat/cat.png" alt="cat" />;
+        }
+    };
+
     return (
-        <div>
+        <div className="home">
             <h1>Veux-tu être ma valentine {params.get("name")} ?</h1>
-            <img src="./images/cat/1-agree-cat.png" alt="cat" />
-            <Action />
+            {renderCat()}
+            <Buttons deniedCount={deniedCount} setDeniedCount={setDeniedCount} />
         </div>
     );
 };
