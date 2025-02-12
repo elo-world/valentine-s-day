@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Buttons = ({ deniedCount, setDeniedCount }) => {
+const Buttons = ({ deniedCount, setDeniedCount, decryptURL }) => {
     const [sizeButton, setSizeButton] = useState(1);
     const [randomPos, setRandomPos] = useState([0, 0]);
 
@@ -41,7 +41,14 @@ const Buttons = ({ deniedCount, setDeniedCount }) => {
 
     return (
         <div className="buttons">
-            <button className="agree">Accepter</button>
+            <button
+                onClick={() => {
+                    decryptURL();
+                }}
+                className="agree"
+            >
+                Accepter
+            </button>
             {deniedButton()}
         </div>
     );
