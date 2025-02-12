@@ -18,7 +18,7 @@ const Home = ({ params }) => {
     };
 
     useEffect(() => {
-        console.log(CryptoJS.AES.encrypt("Je t'aime", "14 Febuary"));
+        console.log(CryptoJS.AES.encrypt("Je t'aime !", "14 Febuary"));
     }, []);
 
     const renderCat = () => {
