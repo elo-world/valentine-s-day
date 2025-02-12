@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/valentine-s-day/static/css/main.dc8180e3.css",
-    "main.js": "/valentine-s-day/static/js/main.8b265ccd.js",
+    "main.css": "/valentine-s-day/static/css/main.af2ae0b8.css",
+    "main.js": "/valentine-s-day/static/js/main.5b64470b.js",
     "static/media/Poppins-Regular.ttf": "/valentine-s-day/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
     "static/media/Poppins-Medium.ttf": "/valentine-s-day/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf",
     "index.html": "/valentine-s-day/index.html",
-    "main.dc8180e3.css.map": "/valentine-s-day/static/css/main.dc8180e3.css.map",
-    "main.8b265ccd.js.map": "/valentine-s-day/static/js/main.8b265ccd.js.map"
+    "main.af2ae0b8.css.map": "/valentine-s-day/static/css/main.af2ae0b8.css.map",
+    "main.5b64470b.js.map": "/valentine-s-day/static/js/main.5b64470b.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc8180e3.css",
-    "static/js/main.8b265ccd.js"
+    "static/css/main.af2ae0b8.css",
+    "static/js/main.5b64470b.js"
   ]
 }
