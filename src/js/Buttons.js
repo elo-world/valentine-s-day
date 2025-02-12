@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const Buttons = ({ deniedCount, setDeniedCount }) => {
     const [sizeButton, setSizeButton] = useState(1);
-    const [randomPos, setRandomPos] = useState();
+    const [randomPos, setRandomPos] = useState([0, 0]);
 
     const smallerButton = () => {
         setDeniedCount((curr) => {
@@ -12,6 +12,11 @@ const Buttons = ({ deniedCount, setDeniedCount }) => {
         setSizeButton((curr) => {
             return (curr -= 0.1);
         });
+
+        setRandomPos([
+            Math.floor(Math.random() * 201) - 100,
+            Math.floor(Math.random() * 201) - 100,
+        ]);
     };
 
     const deniedButton = () => {
@@ -24,6 +29,7 @@ const Buttons = ({ deniedCount, setDeniedCount }) => {
                     style={{
                         fontSize: `${6 * sizeButton}vw`,
                         padding: `${3 * sizeButton}vw ${5 * sizeButton}vw`,
+                        transform: `translate(${randomPos[0]}%, ${randomPos[1]}%)`,
                     }}
                     className="denied"
                 >
